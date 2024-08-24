@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Henrekis" %>
+
+<h1>Henrekis</h1>
+
+<div id="henrekis">
+  <% @henrekis.each do |henreki| %>
+    <%= render henreki %>
+    <p>
+      <%= link_to "Show this henreki", henreki %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New henreki", new_henreki_path %>

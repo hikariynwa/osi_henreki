@@ -1,0 +1,2 @@
+class Henreki < ApplicationRecord
+end
